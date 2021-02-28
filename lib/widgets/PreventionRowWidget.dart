@@ -10,8 +10,9 @@ class buildPreventionRowWidget extends StatelessWidget {
   final List<Information> list;
   final String title;
   final String path;
+  final Color color;
 
-  const buildPreventionRowWidget({this.list, this.title, this.path});
+  const buildPreventionRowWidget({this.list, this.title, this.path, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +46,7 @@ class buildPreventionRowWidget extends StatelessWidget {
                             buildPreventionCardWidget(prevention: about))
                             .toList(),
                       ),
-                      buildNavButtonWidget(navigatorName: path),
+                      buildNavButtonWidget(navigatorName: path, color: color),
                     ],
                   ),
                 ],

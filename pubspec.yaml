@@ -24,6 +24,8 @@ dependencies:
   flutter:
     sdk: flutter
   bubble_bottom_bar: ^1.2.0
+  firebase_auth: ^0.20.1
+  cloud_firestore: ^0.16.0+1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -88,6 +90,12 @@ flutter:
   - lib/images/question-mark.png
   - lib/images/test-result.png
   - lib/images/waiting-time.png
+  - lib/images/hospitals/asian_hospital_and_medical_center.jpg
+  - lib/images/hospitals/chinese_general_hospital.jpg
+  - lib/images/hospitals/detoxicare_mld.jpg
+  - lib/images/hospitals/djnrmh.jpg
+  - lib/images/hospitals/lcp.jpg
+  - lib/images/hospitals/mmc.jpeg
   - lib/images/symptoms/ache.png
   - lib/images/symptoms/breath.png
   - lib/images/symptoms/chill.png

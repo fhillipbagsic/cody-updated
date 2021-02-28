@@ -13,11 +13,14 @@ import 'package:cody/pages/Screening%20pages/SelfMonitoringResult.dart';
 import 'package:cody/pages/Screening%20pages/Terms&Condition.dart';
 import 'package:cody/pages/Screening%20pages/UnderageResult.dart';
 import 'package:cody/pages/Screening.dart';
+import 'package:cody/pages/TestingCenters%20pages/GuidanceCont.dart';
+import 'package:cody/pages/TestingCenters%20pages/Hospital%20Information.dart';
+import 'package:cody/pages/TestingCenters%20pages/HospitalList.dart';
+import 'package:cody/pages/TestingCenters.dart';
 import 'package:cody/pages/information_pages/Result.dart';
 import 'package:flutter/material.dart';
 import 'package:cody/pages/About-COVID.dart';
 import 'package:cody/pages/Screening pages/IsolateResult.dart';
-
 import 'pages/Screening pages/ActiveMonitoringResult.dart';
 import 'pages/Screening pages/CaseManagementResult.dart';
 import 'pages/Screening pages/SelfMonitoringResult.dart';
@@ -44,8 +47,11 @@ void main() {
       '/underage_result': (context) => UnderageResult(),
       '/isolate_result': (context) => IsolateResult(),
       '/self_monitoring_result': (context) => SelfMonitoringResult(),
-      'active_monitoring_result': (context) => ActiveMonitoringResult(),
-      'case_management_result': (context) => CaseManagementResult(),
+      '/active_monitoring_result': (context) => ActiveMonitoringResult(),
+      '/case_management_result': (context) => CaseManagementResult(),
+      '/guidance_cont': (context) => GuidanceCont(),
+      '/hospital_list': (context) => HospitalList(),
     },
   ));
+
 }

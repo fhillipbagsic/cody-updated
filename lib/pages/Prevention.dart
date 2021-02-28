@@ -142,8 +142,8 @@ class Prevention extends StatelessWidget {
                 'Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local health authority.',
           ),
 
-          buildPreventionRowWidget(title: 'Prevent Getting Sick', path: '/prevention_cont', list: preventions,),
-          buildPreventionRowWidget(title: 'If You\'re Already Sick', path: '/sick_cont', list: sick_preventions,),
+          buildPreventionRowWidget(title: 'Prevent Getting Sick', path: '/prevention_cont', list: preventions, color: ColorBrightGreen,),
+          buildPreventionRowWidget(title: 'If You\'re Already Sick', path: '/sick_cont', list: sick_preventions, color: ColorBrightGreen,),
 
         ],
       ),

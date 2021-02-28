@@ -11,8 +11,6 @@ import 'package:cody/widgets/HeaderWidget.dart';
 
 class Dashboard extends StatelessWidget {
 
-
-
   List<Information> infos = [
     Information(
       id: 1,
@@ -111,7 +109,7 @@ class Dashboard extends StatelessWidget {
               description:
                   'CODY helps you guide through the pandemic by providing an up-to-date rundown of the COVID-19 and how you can protect yourself against it.'),
           _buildStatsGrid(),
-          buildPreventionRowWidget(title: 'Prevent Getting Sick', path: '/prevention_cont', list: preventions,),
+          buildPreventionRowWidget(title: 'Prevent Getting Sick', path: '/prevention_cont', list: preventions, color: ColorBrightRed,),
 
           _buildInformation(infos),
         ],

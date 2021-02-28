@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 
 class buildNavButtonWidget extends StatelessWidget {
   final String navigatorName;
-
-  buildNavButtonWidget({this.navigatorName});
+  final Color color;
+  buildNavButtonWidget({this.navigatorName, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class buildNavButtonWidget extends StatelessWidget {
         width: 20.0,
         height: 20.0,
         decoration: new BoxDecoration(
-          color: ColorBrightGreen,
+          color: color,
           shape: BoxShape.circle,
         ),
         child: Center(

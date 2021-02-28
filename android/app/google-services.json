@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "452367457608",
+    "project_id": "cody-database",
+    "storage_bucket": "cody-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452367457608:android:3b4316448caa3cf78ee77d",
+        "android_client_info": {
+          "package_name": "bagsic.cody"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452367457608-uvqke6eaferffsl656f7aqmojja2g3m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTa2hdL7rgbvGdHpHZztIi3DmZTpOY-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452367457608-uvqke6eaferffsl656f7aqmojja2g3m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

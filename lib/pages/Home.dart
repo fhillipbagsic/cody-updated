@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
     PlaceholderWidget(AboutCOVID()),
     PlaceholderWidget(Prevention()),
     PlaceholderWidget(Screening()),
-    PlaceholderWidget(TestingCenters())
+    PlaceholderWidget(TestingCenters()),
   ];
 
   @override
