@@ -63,7 +63,7 @@ class ActiveMonitoringResult extends StatelessWidget {
                     children: [
                       TextButton(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/home');
+                            Navigator.pop(context);
                           },
                           child: Text(
                             'Done',

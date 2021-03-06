@@ -58,7 +58,8 @@ class IsolateResult extends StatelessWidget {
                     children: [
                       TextButton(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/home');
+                            Navigator.pop(context);
+                            //Navigator.pushNamed(context, '/home');
                           },
                           child: Text(
                             'Done',
