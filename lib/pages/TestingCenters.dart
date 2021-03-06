@@ -1,5 +1,6 @@
 import 'package:cody/assets/styles.dart';
 import 'package:cody/classes/Information.dart';
+import 'package:cody/pages/TestingCenters%20pages/HospitalList.dart';
 import 'package:cody/widgets/AppBarWidget.dart';
 import 'package:cody/widgets/PreventionRowWidget.dart';
 import 'package:flutter/cupertino.dart';
@@ -54,6 +55,7 @@ class TestingCenters extends StatelessWidget {
   List<String> hospitaltype = ['All', 'Private', 'Public'];
 
   List<String> type = ['All', 'rRT PCR', 'Cartridge'];
+
   @override
   Widget build(BuildContext context) {
     /*
@@ -82,7 +84,7 @@ class TestingCenters extends StatelessWidget {
             list: guidances,
             color: ColorBrightPurple,
           ),
-          abc(
+          FilterWidget(
             region: regions,
             hospital: hospitaltype,
             type: type,
@@ -93,17 +95,22 @@ class TestingCenters extends StatelessWidget {
   }
 }
 
-class abc extends StatefulWidget {
+class FilterWidget extends StatefulWidget {
   final List<String> region;
   final List<String> hospital;
   final List<String> type;
-  const abc({this.region, this.hospital, this.type});
+  FilterWidget({this.region, this.hospital, this.type});
 
+  List<String> chosenFilter = ['All', 'All', 'All'];
   @override
-  _abcState createState() => _abcState();
+  _FilterWidgetState createState() => _FilterWidgetState();
 }
 
-class _abcState extends State<abc> {
+class _FilterWidgetState extends State<FilterWidget> {
+  String dropdownValue1 = 'All';
+  String dropdownValue2 = 'All';
+  String dropdownValue3 = 'All';
+
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
@@ -152,9 +159,45 @@ class _abcState extends State<abc> {
                                     fontWeight: FontWeight.bold,
                                     letterSpacing: 0.7),
                               ),
-                              dropDownButton(
-                                list: widget.region,
-                              )
+                              // dropDownButton(
+                              //   list: widget.region,
+                              // )
+                              Container(
+                                margin: EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+                                height: 35.0,
+                                width: double.infinity,
+                                child: Center(
+                                  child: DropdownButton<String>(
+                                    icon: Icon(Icons.keyboard_arrow_down),
+                                    value: dropdownValue1,
+                                    elevation: 16,
+                                    underline: Container(
+                                      height: 1,
+                                      color: Colors.transparent,
+                                    ),
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                    ),
+                                    onChanged: (String newValue) {
+                                      setState(() {
+                                        dropdownValue1 = newValue;
+                                        widget.chosenFilter[0] = newValue;
+                                      });
+                                    },
+                                    items: widget.region.map<DropdownMenuItem<String>>((String value) {
+                                      return DropdownMenuItem<String>(
+                                        value: value,
+                                        child: Center(
+                                          child: Text(
+                                            value,
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+                                      );
+                                    }).toList(),
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -168,8 +211,45 @@ class _abcState extends State<abc> {
                                     fontWeight: FontWeight.bold,
                                     letterSpacing: 0.7),
                               ),
-                              dropDownButton(
-                                list: widget.hospital,
+                              // dropDownButton(
+                              //   list: widget.hospital,
+                              // ),
+
+                              Container(
+                                margin: EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+                                height: 35.0,
+                                width: double.infinity,
+                                child: Center(
+                                  child: DropdownButton<String>(
+                                    icon: Icon(Icons.keyboard_arrow_down),
+                                    value: dropdownValue2,
+                                    elevation: 16,
+                                    underline: Container(
+                                      height: 1,
+                                      color: Colors.transparent,
+                                    ),
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                    ),
+                                    onChanged: (String newValue) {
+                                      setState(() {
+                                        dropdownValue2 = newValue;
+                                        widget.chosenFilter[1] = newValue;
+                                      });
+                                    },
+                                    items: widget.hospital.map<DropdownMenuItem<String>>((String value) {
+                                      return DropdownMenuItem<String>(
+                                        value: value,
+                                        child: Center(
+                                          child: Text(
+                                            value,
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+                                      );
+                                    }).toList(),
+                                  ),
+                                ),
                               ),
                             ],
                           ),
@@ -184,9 +264,46 @@ class _abcState extends State<abc> {
                                     fontWeight: FontWeight.bold,
                                     letterSpacing: 0.7),
                               ),
-                              dropDownButton(
-                                list: widget.type,
-                              )
+                              // dropDownButton(
+                              //   list: widget.type,
+                              // ),
+
+                          Container(
+                            margin: EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+                            height: 35.0,
+                            width: double.infinity,
+                            child: Center(
+                              child: DropdownButton<String>(
+                                icon: Icon(Icons.keyboard_arrow_down),
+                                value: dropdownValue3,
+                                elevation: 16,
+                                underline: Container(
+                                  height: 1,
+                                  color: Colors.transparent,
+                                ),
+                                style: TextStyle(
+                                  color: Colors.black,
+                                ),
+                                onChanged: (String newValue) {
+                                  setState(() {
+                                    dropdownValue3 = newValue;
+                                    widget.chosenFilter[2] = newValue;
+                                  });
+                                },
+                                items: widget.type.map<DropdownMenuItem<String>>((String value) {
+                                  return DropdownMenuItem<String>(
+                                    value: value,
+                                    child: Center(
+                                      child: Text(
+                                        value,
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  );
+                                }).toList(),
+                              ),
+                            ),
+                          )
                             ],
                           ),
                         ),
@@ -200,7 +317,15 @@ class _abcState extends State<abc> {
                       child: FlatButton(
                         height: 40.0,
                         color: ColorBrightPurple,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  HospitalList(filter: widget.chosenFilter),
+                            ),
+                          );
+                        },
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0),
                             side: BorderSide(color: ColorBrightPurple)),
@@ -230,7 +355,7 @@ class _abcState extends State<abc> {
 }
 
 class dropDownButton extends StatefulWidget {
-  List<String> list;
+  final List<String> list;
   dropDownButton({this.list});
   @override
   _dropDownButtonState createState() => _dropDownButtonState();
@@ -244,7 +369,6 @@ class _dropDownButtonState extends State<dropDownButton> {
       margin: EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
       height: 35.0,
       width: double.infinity,
-
       child: Center(
         child: DropdownButton<String>(
           icon: Icon(Icons.keyboard_arrow_down),

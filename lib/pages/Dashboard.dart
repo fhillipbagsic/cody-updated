@@ -28,14 +28,7 @@ class Dashboard extends StatelessWidget {
           'The most common symptoms are very similar to other viruses: fever, cough, and difficulty breathing.',
       path: '/symptoms',
     ),
-    Information(
-      id: 3,
-      title: 'How it Spreads',
-      image: 'lib/images/spread1.png',
-      preview:
-          'COVID-19 is thought to spread mainly through close contact from person to person.',
-      path: '/prevention_cont',
-    ),
+
     Information(
         id: 4,
         title: 'What To Do If You\'re Sick',
@@ -129,9 +122,9 @@ SliverToBoxAdapter _buildStatsGrid() {
           Flexible(
             child: Row(
               children: [
-                _buildStatsCard('Global Total Cases', '89.4 M', ColorBrightOrange),
+                _buildStatsCard('Philippines Total Cases', '348698', ColorBrightOrange),
                 _buildStatsCard(
-                    'Philippines Total Cases', '480 K', ColorBrightYellow),
+                    'Recovery Rate', '84.36%', ColorBrightYellow),
               ],
             ),
           ),
@@ -150,9 +143,9 @@ SliverToBoxAdapter _buildStatsGrid() {
           Flexible(
             child: Row(
               children: [
-                _buildStatsCard('Active Cases', '26.7 K', ColorBrightBlue),
-                _buildStatsCard('Recovered', '450 K', ColorBrightGreen),
-                _buildStatsCard('Deaths', '9.4K', ColorBrightRed)
+                _buildStatsCard('Active Cases', '48040', ColorBrightBlue),
+                _buildStatsCard('Recoveries', '294161', ColorBrightGreen),
+                _buildStatsCard('Deaths', '6493', ColorBrightRed)
               ],
             ),
           ),

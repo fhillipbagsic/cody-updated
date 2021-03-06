@@ -9,7 +9,7 @@ class Hospital {
   String contactNumber;
   String licenseValidity;
   String image;
-
+  String website;
   Hospital(
       {this.id,
       this.region,
@@ -20,5 +20,6 @@ class Hospital {
       this.typeOfTesting,
       this.contactNumber,
       this.licenseValidity,
-      this.image});
+      this.image,
+      this.website});
 }

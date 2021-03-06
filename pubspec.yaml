@@ -96,6 +96,51 @@ flutter:
   - lib/images/hospitals/djnrmh.jpg
   - lib/images/hospitals/lcp.jpg
   - lib/images/hospitals/mmc.jpeg
+  - lib/images/hospitals/itrmc.jpg
+  - lib/images/hospitals/r1mc.jpg
+  - lib/images/hospitals/mmmhmc.jpg
+  - lib/images/hospitals/simc.jpg
+  - lib/images/hospitals/sacih.jpg
+  - lib/images/hospitals/jblmgh.jpg
+  - lib/images/hospitals/bghmc.jpg
+  - lib/images/hospitals/gcmc.jpeg
+  - lib/images/hospitals/oni.jpg
+  - lib/images/hospitals/mmc.jpeg
+  - lib/images/hospitals/qhsr.jpg
+  - lib/images/hospitals/onp.jpg
+  - lib/images/hospitals/ormh.jpg
+  - lib/images/hospitals/omph.jpg
+  - lib/images/hospitals/brdrl.jpg
+  - lib/images/hospitals/bmc.jpg
+  - lib/images/hospitals/clmmrh.jpg
+  - lib/images/hospitals/bmc1.jpg
+  - lib/images/hospitals/tdhi.jpg
+  - lib/images/hospitals/Allegiant_Regional_Care_Hospital.jpg
+  - lib/images/hospitals/Vicente_Sotto_Memorial_Medical_Center.jpg
+  - lib/images/hospitals/University_of_Cebu_Medical_Center.jpg
+  - lib/images/hospitals/Divine_Word_Hospital_Viralogy_Laboratory.png
+  - lib/images/hospitals/Eastern_Visayas_Regional_Covid-19_Testing_Center.jpg
+  - lib/images/hospitals/OSPA_Farmers'_Medical_Center.jpg
+  - lib/images/hospitals/Zamboanga_City_Medical_Center.jpg
+  - lib/images/hospitals/Ciudad_Medical_Zamboanga.jpg
+  - lib/images/hospitals/Zamboanga_Del_Sur_Medical_Center_PCR_Laboratory.png
+  - lib/images/hospitals/Polymedic_Medical_Plaza_Inc.jpg
+  - lib/images/hospitals/Maria_Reyna_Xavier_University_Hospital.jpg
+  - lib/images/hospitals/Lanao_Del_Norte_Covid-19_Testing_Laboratory.jpg
+  - lib/images/hospitals/Southern_Philippines_Medical_Center.jpg
+  - lib/images/hospitals/Davao_Regional_Medical_Center.jpg
+  - lib/images/hospitals/davao-doctors-hospital-.jpg
+  - lib/images/hospitals/Dr._Arturo_Pingoy_Medical_Center.jpg
+  - lib/images/hospitals/St._Elizabeth_Hospital.jpg
+  - lib/images/hospitals/Dr._Jorge_P._Royeca_Hospital.jpg
+  - lib/images/hospitals/Butuan_Medical_Center.jpg
+  - lib/images/hospitals/CARAGA_Regional_Hospital.jpg
+  - lib/images/hospitals/Democrito_O._Plaza_Memorial_Hospital.jpg
+  - lib/images/hospitals/Baguio_General_Hospital_Medical_Center.jpg
+  - lib/images/hospitals/Luis_Hora_Memorial_Regional_Hospital.jpg
+  - lib/images/hospitals/Benguet_General_Hospital.jpg
+  - lib/images/hospitals/Amai_Pakpak_Medical_Center.jpg
+  - lib/images/hospitals/Amai_Pakpak_Medical_Center.jpg
   - lib/images/symptoms/ache.png
   - lib/images/symptoms/breath.png
   - lib/images/symptoms/chill.png
