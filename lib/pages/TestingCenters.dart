@@ -74,10 +74,10 @@ class TestingCenters extends StatelessWidget {
         slivers: [
           buildHeaderWidget(
               color: ColorBrightPurple,
-              title: 'Things to Know About COVID-19',
+              title: 'Find Local Testing Centers Near You',
               image: 'lib/images/reading.png',
               description:
-                  'To further understand what COVID-19 is all about, read more about what the virus is, its symptoms, who are at high risks, and when you should consult a doctor.'),
+                  'Hospitals and testing centers are available for testing COVID-19 to people. Know what to do before and after getting tested by reading below.'),
           buildPreventionRowWidget(
             title: 'Testing Guidance',
             path: '/guidance_cont',

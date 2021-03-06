@@ -90,6 +90,7 @@ flutter:
   - lib/images/question-mark.png
   - lib/images/test-result.png
   - lib/images/waiting-time.png
+  - lib/images/covid-test.png
   - lib/images/hospitals/asian_hospital_and_medical_center.jpg
   - lib/images/hospitals/chinese_general_hospital.jpg
   - lib/images/hospitals/detoxicare_mld.jpg
